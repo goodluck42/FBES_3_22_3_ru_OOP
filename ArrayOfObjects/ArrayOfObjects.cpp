@@ -88,14 +88,6 @@ private:
 };
 
 
-class A
-{
-	A()
-	{
-
-	}
-};
-
 class Classroom
 {
 public:
@@ -164,6 +156,7 @@ void print_Student(Student* student)
 
 int main()
 {
+	
 	Classroom room{ 4 };
 
 	room.add_student(new Student{ "Vadim", 25, 20});
@@ -171,7 +164,7 @@ int main()
 	room.add_student(new Student{ "Sergey", 50, 18 });
 
 	Student* stud1 = room.get_student_by_name("Vadim");
-
+	
 	if (stud1 == nullptr)
 	{
 		std::cout << "Student not found" << '\n';
