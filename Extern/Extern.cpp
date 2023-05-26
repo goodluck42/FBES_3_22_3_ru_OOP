@@ -32,8 +32,28 @@ int sum(int a, int b)
     return a + b;
 }
 
+
+class IntArray
+{
+public:
+    IntArray();
+    void append(int value);
+    void prepend(int value);
+    int get(int index);
+};
+
 int main()
 {
+    // int* arr = new int[3] {10, 20, 30};
+
+    IntArray arr;
+
+    arr.append(50);
+    arr.append(19);
+
+    std::cout << arr.get(1) << '\n'; // 19
+    // std::cout << arr[1] << '\n'; // 19
+
     register int i = 0;
 
     for (; i < 1'000'000'000; ++i) {}
