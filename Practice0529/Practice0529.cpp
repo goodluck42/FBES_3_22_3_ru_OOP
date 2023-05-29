@@ -30,6 +30,8 @@ public:
 		{
 			m_data[m_len + i] = a_str[i];
 		}
+
+		m_len += len;
 	}
 	char* data()
 	{
@@ -54,7 +56,7 @@ int main()
 {
 	Str str1;
 
-	str1.append("helloy ");
+	str1.append("helloy");
 	str1.append("world");
 
 
