@@ -58,6 +58,11 @@ int main()
 
 	str1.append("helloy");
 	str1.append("world");
+	str1.append("world");
+	str1.append("world");
+	str1.append("world");
+	str1.append("world");
+	str1.append("world");
 
 
 	std::cout << str1.data();
