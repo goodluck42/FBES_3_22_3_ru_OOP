@@ -193,7 +193,7 @@ int main()
 	}*/
 
 	// ERASE 
-	{
+	/*{
 		std::string s1 = "Hello world";
 
 		std::string& result = s1.erase(0, 6);
@@ -204,6 +204,25 @@ int main()
 		}
 
 		std::cout << s1;
+	}*/
+
+	// std::getline
+	/*{
+		std::string input;
+
+		// std::cin >> input;
+		std::getline(std::cin, input);
+
+		std::cout << "output -> " << input << '\n';
+	}*/
+
+	//std::to_string
+	{
+		int value = 42123;
+
+		std::string str = std::to_string(value);
+
+		std::cout << str;
 	}
 
 }
