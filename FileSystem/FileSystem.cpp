@@ -72,52 +72,59 @@ int main()
 
 
 	int size = 42;
-
+	
 	char* buffer = new char[sizeof(int)];
 
 	char* s = (char*)size;
 
+	for (int i = 0; i < sizeof(int); ++i)
+	{
+		buffer[i] = s[i];
+	}
+
+
+	FILE* file;
+	fopen_s(&file, "test.bin", "ab");
+
 	std::cout << (void*)s;
 
 
-	{
-		std::fstream file;
+	//{
+	//	std::fstream file;
 
-		file.open("data.bin", std::ios::out | std::ios::binary);
+	//	file.open("data.bin", std::ios::out | std::ios::binary);
 
-		if (file.is_open())
-		{
-			User data{ "binary data!", "qwerty", 20 };
+	//	if (file.is_open())
+	//	{
+	//		User data{ "binary data!", "qwerty", 20 };
 
-			int len = data.login.length();
+	//		int len = data.login.length();
 
-			char* len_buffer = new char[sizeof(int)] {};
+	//		char* len_buffer = new char[sizeof(int)] {};
 
-			for (int i = 0; i < sizeof(int); ++i)
-			{
-				len_buffer[i] = ???;
-			}
+	//		for (int i = 0; i < sizeof(int); ++i)
+	//		{
+	//			len_buffer[i] = ???;
+	//		}
+	//		//file.getline(nullptr, 0);
+	//		file.write(len_buffer, sizeof(int));
 
-			file.write(len_buffer, sizeof(int));
+	//		delete[] len_buffer;
 
-			delete[] len_buffer;
+	//		file.close();
+	//	}
+	//	else
+	//	{
+	//		std::cout << "failed to open file";
+	//	}
 
-			file.close();
-		}
-		else
-		{
-			std::cout << "failed to open file";
-		}
-
-		
-
-		// in = 00000010
-		// binary = 01000000
-		// 00000010
-		// |
-		// 01000000
-		// 
-		// 01000010
-	}
+	//	// in = 00000010
+	//	// binary = 01000000
+	//	// 00000010
+	//	// |
+	//	// 01000000
+	//	// 
+	//	// 01000010
+	//}
 	
 }
