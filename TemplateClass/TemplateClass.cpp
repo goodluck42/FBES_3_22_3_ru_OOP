@@ -140,11 +140,11 @@ using std::cout;
 using std::cin;
 
 
-template<typename K, typename V>
-struct Pair {
-	K key;
-	V value;
-};
+//template<typename K, typename V>
+//struct Pair {
+//	K key;
+//	V value;
+//};
 
 template<typename K, typename V>
 class Dictinary {
@@ -154,7 +154,7 @@ class Dictinary {
 		V value;
 	};
 
-	Pair<K, V>* m_data;
+	Pair* m_data;
 };
 
 
