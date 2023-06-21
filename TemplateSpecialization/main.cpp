@@ -60,6 +60,7 @@ namespace Collections
 				m_length++;
 			}
 		}
+
 		T& operator[](size_t index)
 		{
 			return m_data[index];
@@ -126,26 +127,26 @@ public:
 
 int main()
 {
-	 /*
-	 {
-		// Общая
-		Group<int> int_group;
+	/*
+	{
+	   // Общая
+	   Group<int> int_group;
 
-		int_group.add_member(5);
+	   int_group.add_member(5);
 
-		// полная
-		Group<StudentMember> student_group;
+	   // полная
+	   Group<StudentMember> student_group;
 
-		student_group.add_member(StudentMember{});
+	   student_group.add_member(StudentMember{});
 
-		// частичная
+	   // частичная
 
-		int* ptr = new int[32];
+	   int* ptr = new int[32];
 
-		Group<int*> ptr_group;
+	   Group<int*> ptr_group;
 
-		ptr_group.add_member(ptr);
+	   ptr_group.add_member(ptr);
 
-		Group<StudentMember*&> test;
-	}*/
+	   Group<StudentMember*&> test;
+   }*/
 }
