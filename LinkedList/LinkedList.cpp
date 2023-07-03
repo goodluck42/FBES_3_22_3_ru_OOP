@@ -7,11 +7,11 @@ int main()
 	{
 		LinkedList<int> list;
 
-		list.insert(60);
-		list.insert(6);
-		list.insert(102);
-		list.insert(42);
-		list.insert(7);
+		list.push_back(60);
+		list.push_back(6);
+		list.push_back(102);
+		list.push_back(42);
+		list.push_back(7);
 	}
 	
 
