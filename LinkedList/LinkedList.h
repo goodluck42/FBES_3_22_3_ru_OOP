@@ -1,6 +1,6 @@
 #pragma once
 #include "Node.h"
-#include <stack>
+#include <list>
 
 template <typename T> class LinkedList
 {
@@ -21,7 +21,6 @@ public:
 		}
 
 		delete m_tail;*/
-
 
 		Node<T>* current = m_head;
 		std::stack<Node<T>*> stack;
@@ -44,7 +43,11 @@ public:
 		m_head = m_tail = nullptr;
 	}
 
-	void insert(const T& elem)
+	void push_front(const T& elem)
+	{
+
+	}
+	void push_back(const T& elem)
 	{
 		if (m_size == 0)
 		{
