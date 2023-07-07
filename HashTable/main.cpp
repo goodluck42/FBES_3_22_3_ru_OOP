@@ -8,7 +8,7 @@ class HashTable
 private:
 	std::hash<K> hash;
 public:
-	V operator[](const K& key)
+	V& operator[](const K& key)
 	{
 		std::cout << hash(key) % 64;
 
@@ -16,12 +16,20 @@ public:
 	}
 };
 
-
+#include <map>
 int main()
 {
-	HashTable<std::string, int> table;
+	std::map<std::string, int> map;
 
-	table["John"]; // 90
+	map["Alex"] = 42;
+	map["John"] = 90;
+
+	std::cout << map["Alex"] << '\n';
+	std::cout << map["John"] << '\n';
+
+	//HashTable<std::string, int> table;
+
+	//table["John"] = 90; // 90
 
 	/*
 
