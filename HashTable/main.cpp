@@ -1,7 +1,6 @@
 #include <iostream>
 #include <functional>
 
-
 template<typename K, typename V>
 class HashTable
 {
@@ -19,13 +18,22 @@ public:
 #include <map>
 int main()
 {
-	std::map<std::string, int> map;
+	std::hash<std::string> hash_fn;
+	int buckets = 5;
+
+	auto hash = hash_fn("Vika") % buckets;
+
+	std::cout << hash;
+
+	/*std::map<std::string, int> map;
 
 	map["Alex"] = 42;
 	map["John"] = 90;
+	map["Sabina"] = 10;
+	map["Javid"] = 40;
 
 	std::cout << map["Alex"] << '\n';
-	std::cout << map["John"] << '\n';
+	std::cout << map["John"] << '\n';*/
 
 	//HashTable<std::string, int> table;
 
