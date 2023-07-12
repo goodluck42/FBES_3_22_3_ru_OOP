@@ -1,6 +1,21 @@
 #include "Array.h"
 #include <list>
 
+class Repo
+{
+private:
+    std::vector<int> m_data;
+
+    Repo() : m_data(20)
+    {
+
+    }
+
+    Repo() : m_data({10, 20, 30})
+    {
+
+    }
+};
 
 
 void print(const Array<int>& arr)

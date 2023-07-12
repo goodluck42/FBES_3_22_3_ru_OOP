@@ -4,6 +4,7 @@
 #include <list>
 #include <algorithm>
 
+
 template<typename T>
 class Array
 {
