@@ -70,4 +70,6 @@ int main()
     array.sort();
 
     print(array);*/
+
+    Array<int> arr{ 1, 2, 30, 20, 90, 10 };
 }

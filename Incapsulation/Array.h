@@ -3,6 +3,7 @@
 #include <vector>
 #include <list>
 #include <algorithm>
+#include <initializer_list>
 
 
 template<typename T>
@@ -11,6 +12,13 @@ class Array
 private:
     std::list<T> m_data;
 public:
+    Array(std::initializer_list<T> list)
+    {
+        for (auto& value : list)
+        {
+            m_data.push_back(value);
+        }
+    }
     void append(const T& elem)
     {
         m_data.push_back(elem);
