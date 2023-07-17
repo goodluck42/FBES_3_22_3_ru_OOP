@@ -108,6 +108,9 @@ public:
 
 int main()
 {
+
+	Vehicle v;
+
 	std::vector<int> data;
 
 	data.push_back(42);
