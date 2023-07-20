@@ -9,7 +9,7 @@ private:
 	double m_weight;
 public:
 	Item(const std::string& a_name, double a_weight) : m_name(a_name), m_weight(a_weight) {}
-	virtual void use() = 0; // pure virtual function
+	virtual void use() = 0; // pure virtual function/method // abstract method
 	const std::string& get_name() const
 	{
 		return m_name;
@@ -243,4 +243,8 @@ int main()
 
 		item->use();
 	}*/
+
+	Base* b = new Derived;
+
+
 }
