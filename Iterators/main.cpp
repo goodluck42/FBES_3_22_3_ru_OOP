@@ -19,12 +19,12 @@ int main()
 	}*/
 
 	// range based for
-	/*for (auto& value : arr)
+	for (auto& value : arr)
 	{
 		std::cout << value << '\n';
-	}*/
+	}
 
-	{
+	/*{
 		ArrayIterator<int> it = arr.begin();
 		ArrayIterator<int> end = arr.end();
 
@@ -33,5 +33,5 @@ int main()
 			std::cout << *it << '\n';
 			++it;
 		}
-	}
+	}*/
 }
